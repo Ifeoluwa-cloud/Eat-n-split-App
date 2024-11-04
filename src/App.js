@@ -126,7 +126,11 @@ function Friend({ friend, onSelection, selectedFriend }) {
                 </p>
           )}
 
-          <Button onClick={() => onSelection(friend)}>{isSelected ? "Close" : "Select"}</Button>
+          <Button 
+            onClick={() => 
+            onSelection(friend)}>
+            {isSelected ? "Close" : "Select"}
+          </Button>
         </li> 
   );
 }
